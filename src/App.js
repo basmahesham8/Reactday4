@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+// imports
+//import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//import { Button } from 'reactstrap';
 
-export default App;
+
+import React, { Component } from 'react';
+
+
+import Movies from './containers/Movies'
+import MovieDetails from './containers/MovieDetails'
+
+//define app container
+//this will represent a container that will join between actions and reducers 
+ export default class App extends Component{
+
+
+  render(){
+    return (
+      <div>
+          <Movies />
+          <MovieDetails />
+           
+      </div>
+  )
+   
+  }
+
+ }
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+// const App = ()=>{
+//   return (
+//     <div>
+//       <Button color="info">Show Movies</Button>{' '}
+//      <h1>hello from app</h1>  
+//     </div>
+//   )
+// }
+
+
+
+
